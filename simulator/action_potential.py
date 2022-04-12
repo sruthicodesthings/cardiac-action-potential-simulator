@@ -13,3 +13,7 @@ def phase_1(v=30.0):
 def phase_2(v=10.0):
     """Phase 2: the plateau. Calcium coming in helps keep voltage up."""
     return 0.0
+
+def phase_3(v=0.0):
+    """Phase 3: potassium leaving pulls the voltage back down."""
+    return -90.0
