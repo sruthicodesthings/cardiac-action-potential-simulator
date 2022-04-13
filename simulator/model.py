@@ -38,3 +38,11 @@ def phase_labels():
         3: "repolarization (K+ out)",
         4: "resting membrane potential",
     }
+
+def action_potential_duration(time, voltage, cutoff=-70):
+    """Rough AP duration: from the upstroke until voltage falls below cutoff."""
+    peak_i = voltage.index(max(voltage))
+    for i in range(peak_i, len(voltage)):
+        if voltage[i] <= cutoff:
+            return time[i] - time[peak_i]
+    return None
