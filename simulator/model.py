@@ -29,3 +29,12 @@ def ventricular_action_potential(dt=1.0):
         voltage.extend(smooth_step(start, end, count))
     time = [i * dt for i in range(len(voltage))]
     return time, voltage
+
+def phase_labels():
+    return {
+        0: "fast depolarization (Na+ in)",
+        1: "early repolarization",
+        2: "plateau (Ca2+ in and K+ out)",
+        3: "repolarization (K+ out)",
+        4: "resting membrane potential",
+    }
