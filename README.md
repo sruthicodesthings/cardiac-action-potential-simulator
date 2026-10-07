@@ -1,7 +1,5 @@
 # Cardiac Action Potential Simulator
 
-> **Reconstruction note:** this repository is a modern reconstruction of a small beginner-style project, arranged to show how it could grow step by step. The Git history is part of that reconstruction; it is not an original 2017 commit record.
-
 This is a simple simulator for the **ventricular cardiac action potential**. I made it mostly to understand why the voltage across a heart cell changes shape during one beat. It has a Python model, a little graph, a FastAPI API, and a React page.
 
 ## The theory behind it
